@@ -5,10 +5,10 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Copier le fichier jar généré dans le conteneur
-COPY target/*.jar app.jar
+COPY target/*.jar demo-github-0.0.1-SNAPSHOT.jar
 
 # Exposer le port sur lequel Spring Boot écoute
 EXPOSE 8080
 
 # Commande pour lancer l'application Spring Boot
-ENTRYPOINT ["java", "-jar", "/app/docker-demo.jar"]
+ENTRYPOINT ["java", "-jar", "/app/demo-github-0.0.1-SNAPSHOT.jar"]
