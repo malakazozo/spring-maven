@@ -104,7 +104,6 @@ jobs:
 
       - name: Build and push image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/springboot-app:${{ github.sha }} .
-          docker build -t ${{ secrets.DOCKER_TOKEN }}/springboot-app:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/springboot-app:${{ github.sha }} -t ${{ secrets.DOCKER_TOKEN }}/springboot-app:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/springboot-app:${{ github.sha }}
           docker push ${{ secrets.DOCKER_TOKEN }}/springboot-app:latest
