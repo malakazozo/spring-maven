@@ -67,14 +67,14 @@
 	</build>
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>nexus</id>
-			<url>http://localhost:8081/repository/maven-snapshots/</url>
-		</snapshotRepository>
-		<repository>
-			<id>nexus</id>
-			<url>http://localhost:8081/repository/maven-releases/</url>
-		</repository>
-	</distributionManagement>
+     <snapshotRepository>
+        <id>nexus</id>
+        <url>https://elliptic-jawless-drool.ngrok-free.dev/repository/maven-snapshots/</url>
+     </snapshotRepository>
+     <repository>
+        <id>nexus</id>
+        <url>https://elliptic-jawless-drool.ngrok-free.dev/repository/maven-releases/</url>
+     </repository>
+    </distributionManagement>
 
 </project>
