@@ -51,7 +51,7 @@ jobs:
       - name: SonarQube Scan
         run: |
           mvn sonar:sonar \
-            -Dsonar.projectKey=demogithub \
+            -Dsonar.projectKey=spring-maven \
             -Dsonar.organization=malakazozo \
             -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
